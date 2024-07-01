@@ -13,5 +13,46 @@
 </head>
 <body>
   
+  <div>
+    <h1>책 관리하기</h1>
+    <div>
+      <label for="bookNo">책번호</label>
+      <input type="text" id="bookNo">
+    </div>
+    <div>
+      <label for="title">책제목</label>
+      <input type="text" id="title">
+    </div>
+    <div>
+      <label for="author">책저자</label>
+      <input type="text" id="author">
+    </div>
+    <div>
+      <button id="init-btn">초기화</button>
+      <button id="register-btn">등록</button>
+      <button id="modify-btn">수정</button>
+      <button id="remove-btn">삭제</button>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>책번호</td>
+          <td>제목</td>
+          <td>저자</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="books">
+      </tbody>
+    </table>
+  </div>
+  
+<script src="${contextPath}/resources/js/app04.js"></script>
+  
 </body>
 </html>
